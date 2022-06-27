@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>柯里化</title>
+    <url>/2022/06/27/Currying/</url>
+    <content><![CDATA[<p>闭包柯里化</p>
+<h2 id="柯里化函数"><a href="#柯里化函数" class="headerlink" title="柯里化函数"></a>柯里化函数</h2><p>柯里化的目的在于避免频繁调用具有相同参数函数的同时，又能够轻松的重用</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">//两个数字相乘</span><br><span class="line">const getnum =(a,b)=&gt;&#123;</span><br><span class="line">    <span class="built_in">return</span> a*b</span><br><span class="line">&#125;</span><br><span class="line">//如果一般都是一个数乘上15的情况，比如</span><br><span class="line">const num1=getnum(5,15);</span><br><span class="line">const num2=getnum(20,15);</span><br><span class="line">//闭包柯里化处理</span><br><span class="line">const newgetnum=b=&gt;&#123;</span><br><span class="line">    <span class="built_in">return</span> a =&gt;&#123;</span><br><span class="line">        <span class="built_in">return</span> a*b</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//碰到b总是15的情况</span><br><span class="line">const newgetnum15 = newgetnum(15)</span><br><span class="line">const num3 = newgetnum15(5)</span><br><span class="line">//b总是别的是数字时，比如4</span><br><span class="line">const newgetnum4 = newgetnum(4)</span><br><span class="line">const num4 = newgetnum4(3)</span><br><span class="line">console.log(num1,num2,num3,num4)//75 300 75 12</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>闭包</title>
+    <url>/2022/06/26/closure/</url>
+    <content><![CDATA[<p>接触闭包的概念</p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>一个函数和对其周围状态（lexical environment，词法环境）的引用捆绑在一起（或者说函数被引用包围），这样的组合就是闭包（closure）</p>
+<p>也就是说，闭包让你可以在一个内层函数中访问到其外层函数的作用域</p>
+<p>在 JavaScript中，每当创建一个函数，闭包就会在函数创建的同时被创建出来，作为函数内部与外部连接起来的一座桥梁</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">demo</span></span>()&#123;</span><br><span class="line">    var a=1;</span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">demoB</span></span>()&#123;</span><br><span class="line">        a++;</span><br><span class="line">        console.log(a)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> demoB;</span><br><span class="line">&#125;</span><br><span class="line">var num = demo();</span><br><span class="line">num();</span><br><span class="line">num();</span><br><span class="line">//输出2.3</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>web前端</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+</search>

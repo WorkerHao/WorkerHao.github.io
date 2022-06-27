@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Worker Hao</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-06-27T04:56:30.566Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Hao Worker</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>柯里化</title>
+    <link href="http://example.com/2022/06/27/Currying/"/>
+    <id>http://example.com/2022/06/27/Currying/</id>
+    <published>2022-06-27T03:42:00.615Z</published>
+    <updated>2022-06-27T04:56:30.566Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;闭包柯里化&lt;/p&gt;
+&lt;h2 id=&quot;柯里化函数&quot;&gt;&lt;a href=&quot;#柯里化函数&quot; class=&quot;headerlink&quot; title=&quot;柯里化函数&quot;&gt;&lt;/a&gt;柯里化函数&lt;/h2&gt;&lt;p&gt;柯里化的目的在于避免频繁调用具有相同参数函数的同时，又能够轻松的重用&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>闭包</title>
+    <link href="http://example.com/2022/06/26/closure/"/>
+    <id>http://example.com/2022/06/26/closure/</id>
+    <published>2022-06-26T05:14:53.466Z</published>
+    <updated>2022-06-27T04:56:29.222Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;接触闭包的概念&lt;/p&gt;
+&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;p&gt;一个函数和对其周围状态（lexical</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="http://example.com/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="笔记" scheme="http://example.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+</feed>
